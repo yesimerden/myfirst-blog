@@ -12,5 +12,5 @@ class Post(models.Model):
     def yayinla(self):
         self.yayinlanma_tarihi=timezone.now()
         self.save()
-    def _str_(self):
+    def __str__(self):
         return self.baslik
